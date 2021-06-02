@@ -12,9 +12,9 @@ The eWIT contract has been audited by Red4Sec (see eWit_Security Audit Report_Fi
 
 Farm.sol is a contract modified from https://github.com/ltonetwork/uniswap-farming/blob/master/contracts/Farm.sol
 
-Modifications:
-    1) Removed usage of SafeMath
-    2) Added a defund function usuable by the contract owner only
-    3) Added a variable that can be used to close deposits after a certain block has passed
-    4) Added an variable which serves as a timelock to lock the LP deposits in the contract until a specified block number has passed
-    5) Added an event for funding and defunding
+Modifications:  
+  1. Removed usage of SafeMath which is obsolete from Solidity ^0.8.0  
+  2. Added a defund function usuable by the contract owner only  
+  3. Added a variable that can be used to close deposits after a certain block has passed  
+  4. Added a variable to lock the LP deposits in the contract until a specified block number has passed  
+  5. Added an event for funding and defunding  
