@@ -8,13 +8,5 @@ eWIT.sol is the contract launched on the Ethereum network and built on the stand
 
 The eWIT contract has been audited by Red4Sec (see eWit_Security Audit Report_Final_Mainnet.pdf) and is deployed at 0x56EE175FE37CD461486cE3c3166e0CaFCcd9843f. 
 
-# The liquidity rewards contract: Farm.sol
-
-Farm.sol is a contract modified from https://github.com/ltonetwork/uniswap-farming/blob/master/contracts/Farm.sol
-
-Modifications:  
-  1. Removed usage of SafeMath which is obsolete from Solidity ^0.8.0  
-  2. Added a defund function usuable by the contract owner only  
-  3. Added a variable that can be used to close deposits after a certain block has passed  
-  4. Added a variable to lock the LP deposits in the contract until a specified block number has passed  
-  5. Added an event for funding and defunding  
+# The liquidity rewards contract:
+The staker contract is a fork of https://github.com/Uniswap/uniswap-v3-staker, it has been deployed at 0x9213d5c6d737Fc2744db9d67037fE90D76Cb0F77.
